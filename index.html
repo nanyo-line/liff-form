@@ -10,40 +10,120 @@
 </head>
 
 <body>
+<style type="text/css">/*タブ切り替え全体のスタイル*/
+.tabs {
+  margin-top: 50px;
+  padding-bottom: 40px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 340px;
+  margin: 0 auto;
+  position: relative;
+}
 
-    <form class="w-75 mx-auto">
+/*タブのスタイル*/
+.tab_item {
+  width: calc(100%/3);
+  height: 50px;
+  border-bottom: 3px solid #5ab4bd;
+  background-color: #d9d9d9;
+  line-height: 50px;
+  font-size: 16px;
+  text-align: center;
+  color: #565656;
+  display: block;
+  float: left;
+  text-align: center;
+  font-weight: bold;
+  transition: all 0.2s ease;
+  text-decoration: underline;
+}
+.tab_item:hover {
+  opacity: 0.75;
+  border-bottom: solid 6px #ff0000;
+}
 
-        <p class="mt-3">以下を入力し、送信を押してください</p>
+/*ラジオボタンを全て消す*/
+input[name="tab_item"] {
+  display: none;
+}
 
-        <!-- <p class="mt-3">施策内容</p>-->
-        <p class="mt-3">理由(アポイントの社名/その他不参加理由)</p>
-        <div>
-            <textarea name="reasons" rows="6" cols="30" required></textarea>
-        </div>
+/*タブ切り替えの中身のスタイル*/
+.tab_content {
+  display: none;
+  padding: 0px 0px 0;
+  clear: both;
+  overflow: hidden;
+}
 
-        <!-- 
-        <p class="mt-3">返信期限</p>
-        <div>
-            <input class="form-control w-100 mt-1" name="date" maxlength="10" type="date" required>
-        </div>
-        
-        <p class="mt-3">使用しているツールURL（SS等）</p>
-        <div>
-            <input class="form-control w-100 mt-1" name="tool">
-        </div>
-        -->
 
-        <input type="submit" class="mt-4 btn btn-primary" value="送信">
+/*選択されているタブのコンテンツのみを表示*/
+#menu1:checked ~ #menu1_content,
+#menu2:checked ~ #menu2_content,
+#menu3:checked ~ #menu3_content {
+  display: block;
+}
 
-    </form>
+/*選択されているタブのスタイルを変える*/
+.tabs input:checked + .tab_item {
+  background-color: #5ab4bd;
+  color: #fff;
+}
+</style>
+<a name="MENU"></a>
+<center>それぞれのアイコンをタップしてください。
+<div class="table-responsive">
+<div class="tabs">
+<input id="menu1" name="tab_item" type="radio" checked> <label class="tab_item" for="menu1">行政情報</label> 
+<input id="menu2" name="tab_item" type="radio"> <label class="tab_item" for="menu2">市民生活</label> 
+<input id="menu3" name="tab_item" type="radio"> <label class="tab_item" for="menu3">安全安心</label>
+<div class="tab_content" id="menu1_content">
+<img alt="WEBリッチメニュー１" src="web_rich_008_menu1.jpg" usemap="#RICH1"></div>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
-    <script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
-    <script src="liff.js"></script>
-    <script src="index.js"></script>
+<div class="tab_content" id="menu2_content">
+<img alt="WEBリッチメニュー２" src="web_rich_008_menu2.jpg" usemap="#RICH2"></div>
+
+<div class="tab_content" id="menu3_content">
+<img alt="WEBリッチメニュー３" src="web_rich_008_menu3.jpg" usemap="#RICH3"></div>
+</div>
+</div>
+
+
+<map id="RICH1" name="RICH1">
+<area coords="5,5,95,95" href="/" shape="rect"> 
+<area coords="105,5,195,95" href="/topics/" shape="rect"> 
+<area coords="205,5,295,95" href="/topiks/osirase/" shape="rect"> 
+<area coords="5,105,95,195" href="/siho/3229" shape="rect"> 
+<area coords="105,105,195,195" href="/yokuarufaq/faq0000" shape="rect"> 
+<area coords="205,105,295,195" href="https://lin.ee/fSlaHRX" shape="rect"> 
+<area coords="5,205,95,295" href="#" shape="rect"> 
+<area coords="105,205,195,295" href="#" shape="rect"> 
+<area coords="205,205,295,295" href="#" shape="rect">
+</map>
+
+<map id="RICH2" name="RICH2">
+<area coords="5,5,95,95" href="/kyujitu/724" shape="rect"> 
+<area coords="105,5,195,95" href="https://nanyo-gomi.glideapp.io/" shape="rect"> 
+<area coords="205,5,295,95" href="http://ilisod002.apsel.jp/nanyo-library/advanced-search" shape="rect"> 
+<area coords="5,105,95,195" href="/kenchiku/1928" shape="rect"> 
+<area coords="105,105,195,195" href="https://lin.ee/fMRNzJP" shape="rect"> 
+<area coords="205,105,295,195" href="https://lin.ee/bpHk8Vz" shape="rect"> 
+<area coords="5,205,95,295" href="#" shape="rect"> 
+<area coords="105,205,195,295" href="#" shape="rect"> 
+<area coords="205,205,295,295" href="#" shape="rect">
+</map>
+
+<map id="RICH2" name="RICH3">
+<area coords="5,5,95,95" href="https://lin.ee/p85Vutu" shape="rect"> 
+<area coords="105,5,195,95" href="https://twitter.com/bousai_nanyo/" shape="rect"> 
+<area coords="205,5,295,95" href="/saigai/" shape="rect"> 
+<area coords="5,105,95,195" href="/hazardmap/" shape="rect"> 
+<area coords="105,105,195,195" href="https://hinanjo.glideapp.io/" shape="rect"> 
+<area coords="205,105,295,195" href="/saigai/3193" shape="rect"> 
+<area coords="5,205,95,295" href="#" shape="rect"> 
+<area coords="105,205,195,295" href="#" shape="rect"> 
+<area coords="205,205,295,295" href="#" shape="rect">
+</map>
 </body>
 
 </html>
