@@ -5,6 +5,26 @@
   </head>
   <body>
     <h2>GitHub User Info</h2>
-    <script src="index.js"></script>
+    
+    <span class="button" onClick='sendMes()'>
+<script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+<script>
+  liff
+        .init({
+            liffId: '1655648364-XgekwZqb'
+        })
+        .then(() => {});
+
+function sendMes() {
+    liff.sendMessages([{
+            'type': 'text',
+            'text': "You've successfully sent a message! Hooray!"
+        }]).then(function() {
+            window.alert('Message sent');
+        })
+</script>
+
+      
+      
   </body>
 </html>
