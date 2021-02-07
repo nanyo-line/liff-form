@@ -22,7 +22,7 @@ function sendText(text) {
     // sendMessages(text);
 // }
 
-// LINEトーク画面上でメッセージ送信
+// LINEトーク画面上でメッセージ送信する
 // function sendMessages(text) {
     liff.sendMessages([{
         'type': 'text',
