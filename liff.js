@@ -27,8 +27,7 @@ function sendText(text) {
     liff.sendMessages([{
         'type': 'text',
         'text': text
-    },
-    ]).then(function () {
+    }]).then(function () {
         liff.closeWindow();
     }).catch(function (error) {
         window.alert('Failed to send message ' + error);
