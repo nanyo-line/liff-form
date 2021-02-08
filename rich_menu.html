@@ -1,0 +1,117 @@
+<style type="text/css">/*タブ切り替え全体のスタイル*/
+.tabs {
+  margin-top: 50px;
+  padding-bottom: 40px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 340px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/*タブのスタイル*/
+.tab_item {
+  width: calc(100%/3);
+  height: 50px;
+  border-bottom: 3px solid #5ab4bd;
+  background-color: #d9d9d9;
+  line-height: 50px;
+  font-size: 16px;
+  text-align: center;
+  color: #565656;
+  display: block;
+  float: left;
+  text-align: center;
+  font-weight: bold;
+  transition: all 0.2s ease;
+  text-decoration: underline;
+}
+.tab_item:hover {
+  opacity: 0.75;
+  border-bottom: solid 6px #ff0000;
+}
+
+/*ラジオボタンを全て消す*/
+input[name="tab_item"] {
+  display: none;
+}
+
+/*タブ切り替えの中身のスタイル*/
+.tab_content {
+  display: none;
+  padding: 0px 0px 0;
+  clear: both;
+  overflow: hidden;
+}
+
+
+/*選択されているタブのコンテンツのみを表示*/
+#menu1:checked ~ #menu1_content,
+#menu2:checked ~ #menu2_content,
+#menu3:checked ~ #menu3_content {
+  display: block;
+}
+
+/*選択されているタブのスタイルを変える*/
+.tabs input:checked + .tab_item {
+  background-color: #5ab4bd;
+  color: #fff;
+}
+</style>
+<a name="MENU"></a>
+<center>それぞれのアイコンをタップしてください。
+<div class="table-responsive">
+<div class="tabs">
+<input id="menu1" name="tab_item" type="radio" checked> <label class="tab_item" for="menu1">行政情報</label> 
+<input id="menu2" name="tab_item" type="radio"> <label class="tab_item" for="menu2">市民生活</label> 
+<input id="menu3" name="tab_item" type="radio"> <label class="tab_item" for="menu3">安全安心</label>
+
+<div class="tab_content" id="menu1_content">
+<img alt="WEBリッチメニュー１" src="line_koho/web_rich_008_menu1.jpg" usemap="#RICH1">
+</div>
+
+<div class="tab_content" id="menu2_content">
+<img alt="WEBリッチメニュー２" src="line_koho/web_rich_008_menu2.jpg" usemap="#RICH2">
+</div>
+
+<div class="tab_content" id="menu3_content">
+<img alt="WEBリッチメニュー３" src="line_koho/web_rich_008_menu3.jpg" usemap="#RICH3">
+</div>
+</div>
+</div>
+
+<map id="RICH1" name="RICH1">
+<area coords="5,5,105,105" href="/" shape="rect"> 
+<area coords="115,5,215,105" href="/topics/" shape="rect"> 
+<area coords="225,5,325,105" href="/topiks/osirase" shape="rect"> 
+<area coords="5,115,105,215" href="/siho/3229" shape="rect"> 
+<area coords="115,115,215,215" href="/yokuarufaq/faq0000" shape="rect"> 
+<area coords="225,115,325,215" href="https://lin.ee/fSlaHRX" shape="rect"> 
+<area coords="5,225,105,325" href="#" shape="rect"> 
+<area coords="115,225,215,325" href="#" shape="rect"> 
+<area coords="225,225,325,325" href="#" shape="rect">
+</map>
+
+<map id="RICH2" name="RICH2">
+<area coords="5,5,105,105" href="/kyujitu/724" shape="rect"> 
+<area coords="115,5,215,105" href="https://nanyo-gomi.glideapp.io/" shape="rect"> 
+<area coords="225,5,325,105" href="http://ilisod002.apsel.jp/nanyo-library/advanced-search" shape="rect"> 
+<area coords="5,115,105,215" href="/kenchiku/1928" shape="rect"> 
+<area coords="115,115,215,215" href="https://lin.ee/fMRNzJP" shape="rect"> 
+<area coords="225,115,325,215" href="https://lin.ee/bpHk8Vz" shape="rect"> 
+<area coords="5,225,105,325" href="#" shape="rect"> 
+<area coords="115,225,215,325" href="#" shape="rect"> 
+<area coords="225,225,325,325" href="#" shape="rect">
+</map>
+
+<map id="RICH2" name="RICH3">
+<area coords="5,5,105,105" href="https://lin.ee/p85Vutu" shape="rect"> 
+<area coords="115,5,215,105" href="https://twitter.com/bousai_nanyo/" shape="rect"> 
+<area coords="225,5,325,105" href="/saigai/" shape="rect"> 
+<area coords="5,115,105,215" href="/hazardmap/" shape="rect"> 
+<area coords="115,115,215,215" href="https://hinanjo.glideapp.io/" shape="rect"> 
+<area coords="225,115,325,215" href="/saigai/3193" shape="rect"> 
+<area coords="5,225,105,325" href="#" shape="rect"> 
+<area coords="115,225,215,325" href="#" shape="rect"> 
+<area coords="225,225,325,325" href="#" shape="rect">
+</map>
