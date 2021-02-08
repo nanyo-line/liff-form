@@ -1,3 +1,17 @@
+body {
+  background: #fff000;
+  background-size: cover;
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "Yu Gothic", "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", "MS PGothic", Helvetica, Arial, Verdana, sans-serif;
+  color: #000;
+  word-break: break-word;
+  margin: 0;
+  font-size: 87.5%;
+  line-height: 1.75;
+  width :340px ;
+}
+
+
+
 @media screen and (min-width:0px){
   body{
     width :340px ;
