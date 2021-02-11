@@ -40,13 +40,13 @@
 ul {
   border: solid 2px skyblue;
   border-radius: 5px;
-  padding: 0.5em 1em 0.5em 2.3em;
+  padding: 0.3em 1em 0.3em 1.5em;
   position: relative;
 }
 
 ul li {
   margin-left:  -30px;
   line-height: 1.5;
-  padding: 0.5em 0;
+  padding: 0.3em 0;
   list-style-type: none!important;
 }
