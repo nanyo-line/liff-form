@@ -2,6 +2,15 @@
     width: 340px;
 }
 
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+
+
 /* メモ　クリップ　Ｂ */
 .clip-box-b {
  position: relative;
