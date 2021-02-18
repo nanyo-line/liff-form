@@ -16,7 +16,7 @@ a {
  position: relative;
  margin: 1em auto 0em;
  padding: 10px 35px 10px 25px;
- width: 90%; /* ボックス幅 */
+ width: 80%; /* ボックス幅 */
  background-color: #FFE4E1; /* ボックス背景色 */
  font-size: 1.2em;
  color: #666666; /* 文章色 */
