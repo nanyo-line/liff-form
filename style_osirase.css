@@ -1,5 +1,7 @@
 ﻿body {
     width: 340px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 a {
