@@ -1,0 +1,108 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<title>安全安心なんようLINE</title>
+<link rel="stylesheet" href="style_covid19.css">
+</head>
+
+<body>
+<style type="text/css">/*タブ切り替え全体のスタイル*/
+.tabs {
+  margin-top: 50px;
+  padding-bottom: 40px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 340px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/*タブのスタイル*/
+.tab_item {
+  width: calc(100%/3);
+  height: 50px;
+  border-bottom: 3px solid #5ab4bd;
+  background-color: #d9d9d9;
+  line-height: 50px;
+  font-size: 16px;
+  text-align: center;
+  color: #565656;
+  display: block;
+  float: left;
+  font-weight: bold;
+  transition: all 0.2s ease;
+  text-decoration: underline;
+}
+.tab_item:hover {
+  opacity: 0.75;
+  border-bottom: solid 6px #ff0000;
+}
+
+/*ラジオボタンを全て消す*/
+input[name="tab_item"] {
+  display: none;
+}
+
+/*タブ切り替えの中身のスタイル*/
+.tab_content {
+  display: none;
+  padding: 0px 0px 0;
+  clear: both;
+  overflow: hidden;
+}
+
+
+/*選択されているタブのコンテンツのみを表示*/
+#menu1:checked ~ #menu1_content,
+#menu2:checked ~ #menu2_content,
+#menu3:checked ~ #menu3_content {
+  display: block;
+}
+
+/*選択されているタブのスタイルを変える*/
+.tabs input:checked + .tab_item {
+  background-color: #5ab4bd;
+  color: #fff;
+}
+</style>
+<a name="MENU"></a>
+<center>それぞれのタブをタップしてください。
+<div class="table-responsive">
+<div class="tabs">
+<input id="menu1" name="tab_item" type="radio" checked> <label class="tab_item" for="menu1">コロナ感染</label> 
+<input id="menu2" name="tab_item" type="radio"> <label class="tab_item" for="menu2">ワクチン接種</label> 
+<input id="menu3" name="tab_item" type="radio"> <label class="tab_item" for="menu3">ワクチン予約</label>
+<div class="tab_content" id="menu1_content">
+<div class="kakomi-smart1"><span class="title-smart1">新型コロナウイルスに関する情報</span>
+(2021/2/17 11:20更新）<BR>
+本日2月17日(水)、本市において新型コロナウイルス感染症の新規感染者は確認されませんでした。<BR>
+引き続き、感染対策をお願いします。<BR>
+<BR>
+また、県内においても、新規感染者は確認されませんでした。
+</div>
+</div>
+
+<div class="tab_content" id="menu2_content">
+<div class="kakomi-smart1"><span class="title-smart1">新型コロナワクチン接種に関する情報</span>
+ワクチンの接種は、新型コロナウイルス感染症の発症を予防し、症状が深刻になるリスクをできる限り減らし、結果として新型コロナウイルス感染症のまん延の防止を図ることを目的としています。<BR>
+<hr>
+■<a href="http://www.city.nanyo.yamagata.jp/covid19_vaccine/1323">新型コロナワクチン接種について</a><br>
+■<a href="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000121431_00222.html" target="_blank">新型コロナワクチンについてＱ＆Ａ</a><br>
+</div>
+</div>
+
+<div class="tab_content" id="menu3_content"><br><br>準備中です。
+</div>
+
+
+</div>
+</div>
+
+
+</body>
+
+</html>

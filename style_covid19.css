@@ -1,0 +1,148 @@
+﻿@charset "UTF-8";
+
+body {
+    width: 340px;
+}
+
+
+/* 2重枠線 */
+.flame07 {
+font-size: 1.2em;
+padding: 0em 10px;
+margin: 0em auto;
+width:90%;
+border: double 5px #dc143c;
+}
+
+/* 説明用 */
+.flame29 {
+margin: 2em 0;
+background: #ffdddd;
+}
+.flame29 .flame29-title {
+font-size: 1.2em;
+background: #a80000;
+padding: 4px;
+text-align: center;
+color: #FFF;
+font-weight: bold;
+letter-spacing: 0.05em;
+}
+.flame29 p {
+padding: 15px 20px;
+margin: 0;
+}
+
+/* ブロックで分ける */
+.box_1 {
+vertical-align: top; 
+   display: inline-block;
+   width:110px;
+   height:110px;
+}
+ 
+.box_2{
+vertical-align: top; 
+  display: inline-block;
+  width:220px;
+  height:220px;
+}
+
+
+/* スマート　囲み枠　1 */
+.kakomi-smart1 {
+ position: relative;
+ margin: 0.3em auto;
+ padding: 2.5em 1em 1em;
+ width: 90%; /* ボックス幅 */
+ border-style: solid;
+ border-color: #191970; /* 枠の色 */
+ border-width: 5px 1px 1px;
+ background-color: #f7f7f7; /* 背景色 */
+ color: #666; /* テキスト色 */
+ box-shadow: 1px 1px 3px #ccc; /* 影 */
+  text-align: left;
+}
+
+.title-smart1 {
+ position: absolute;
+ top: 8px;
+ left: 15px;
+ background-color: #f7f7f7; /* タイトル背景色 */
+ color: #191970; /* タイトル色 */
+ font-size: 1.1em;
+ font-weight: bold;
+}
+
+/* Ｑ＆Ａ枠　1 */    
+.cp_qa *, .cp_qa *:after, .cp_qa *:before {
+	font-family: 'FontAwesome', sans-serif;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+.cp_qa dt,.cp_qa dd {
+	position: relative;
+	padding: 0.5em;
+	box-shadow: 0px 1px 1px rgba(0,0,0,0.2);
+	border-radius: 0.3em;
+}
+.cp_qa dt {
+	margin: 0 3em 1em 3em;
+	background: #ffe0b2;
+}
+.cp_qa dd {
+	margin: 0 3em 3em 3em;
+	background: #b2ebf2;
+}
+/* 吹き出し▶︎ */
+.cp_qa dt::before,.cp_qa dd::before{
+	position: absolute;
+	z-index: 99;
+	top: 0.5em;
+	display: inline-block;
+	width: 0;
+	height: 0;
+	content: '';
+	border-style: solid;
+}
+/* 質問吹き出し▶︎ */
+.cp_qa dt::before {
+	left: -0.5em;
+	border-width: 5px 8.7px 5px 0;
+	border-color: transparent #ffe0b2 transparent transparent;
+}
+/* 答え吹き出し▶︎ */
+.cp_qa dd::before {
+	right: -0.5em;
+	border-width: 5px 0 5px 8.7px;
+	border-color: transparent transparent transparent #b2ebf2;
+}
+/* ?!アイコン */
+.cp_qa dt::after,.cp_qa dd::after {
+	font-size: 1.2em;
+	position: absolute;
+	top: 0;
+	color: #ffffff;
+	border-radius: 50%;
+	display: inline-block;
+	width: 1.5em;
+	height: 1.5em;
+	line-height: 1.2em;
+}
+/* ?アイコン */
+.cp_qa dt::after {
+	left: -2.5em;
+	margin: 0 0.5em 0 0;
+	padding: 0.2em 0.4em;
+	content: 'Q';
+	background: #f57c00;
+}
+/* !アイコン */
+.cp_qa dd::after {
+	right: -2.5em;
+	margin: 0 0 0 0.5em;
+	padding: 0.2em 0.4em;
+	content: 'A';
+	background: #0097a7;
+}
+
