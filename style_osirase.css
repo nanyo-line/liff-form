@@ -14,7 +14,7 @@ a {
 /* メモ　クリップ　Ｂ */
 .clip-box-b {
  position: relative;
- margin: 1em auto 0em;
+ margin: 1em 1em 0em;
  padding: 10px 35px 10px 25px;
  width: 80%; /* ボックス幅 */
  background-color: #FFE4E1; /* ボックス背景色 */
@@ -49,6 +49,7 @@ a {
 ul {
   border: solid 2px skyblue;
   border-radius: 5px;
+  margin: 1em 1em;
   padding: 0.3em 1em 0.3em 2.3em;
   position: relative;
 }
