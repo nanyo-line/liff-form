@@ -1,6 +1,13 @@
 ﻿@charset "UTF-8";
 
 body {
+  font-family: "Helvetica Neue",
+    Arial,
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    Meiryo,
+    sans-serif;
+	
     width: 340px;
     margin-left: auto;
     margin-right: auto;
